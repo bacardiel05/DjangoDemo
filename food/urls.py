@@ -3,7 +3,7 @@ from django.urls import path
 
 urlpatterns = [
     path('',views.index,name='index'),
-    # path('hello/',views.index,name='index')
     path('item/',views.item,name='item'),
-    # '' means /food   
+    #/food/1
+    path('<int:item_id>/',views.detail,name='detail'),
 ]
