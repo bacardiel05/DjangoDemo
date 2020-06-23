@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 # every app we create goes here
 INSTALLED_APPS = [
+    'food.apps.FoodConfig', #FoodConfig found on foods.app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -115,4 +116,6 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-f
+# https://docs.djangoproject.com/en/1.11/howto/static-files/
+
+STATIC_URL = '/static/'
